@@ -320,16 +320,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# facts
+# aoi
 --------------------------------------------------------------*/
-.facts .icon-box {
+.aoi .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
-.facts .icon-box .icon {
+.aoi .icon-box .icon {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -339,90 +339,90 @@ section {
   transition: ease-in-out 0.3s;
   position: relative;
 }
-.facts .icon-box .icon i {
+.aoi .icon-box .icon i {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
 }
-.facts .icon-box .icon svg {
+.aoi .icon-box .icon svg {
   position: absolute;
   top: 0;
   left: 0;
 }
-.facts .icon-box .icon svg path {
+.aoi .icon-box .icon svg path {
   transition: 0.5s;
   fill: #f5f5f5;
 }
-.facts .icon-box h4 {
+.aoi .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
-.facts .icon-box h4 a {
+.aoi .icon-box h4 a {
   color: #45505b;
   transition: ease-in-out 0.3s;
 }
-.facts .icon-box p {
+.aoi .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
-.facts .icon-box:hover {
+.aoi .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
-.facts .iconbox-blue i {
+.aoi .iconbox-blue i {
   color: #47aeff;
 }
-.facts .iconbox-blue:hover .icon i {
+.aoi .iconbox-blue:hover .icon i {
   color: #fff;
 }
-.facts .iconbox-blue:hover .icon path {
+.aoi .iconbox-blue:hover .icon path {
   fill: #47aeff;
 }
-.facts .iconbox-orange i {
+.aoi .iconbox-orange i {
   color: #ffa76e;
 }
-.facts .iconbox-orange:hover .icon i {
+.aoi .iconbox-orange:hover .icon i {
   color: #fff;
 }
-.facts .iconbox-orange:hover .icon path {
+.aoi .iconbox-orange:hover .icon path {
   fill: #ffa76e;
 }
-.facts .iconbox-pink i {
+.aoi .iconbox-pink i {
   color: #e80368;
 }
-.facts .iconbox-pink:hover .icon i {
+.aoi .iconbox-pink:hover .icon i {
   color: #fff;
 }
-.facts .iconbox-pink:hover .icon path {
+.aoi .iconbox-pink:hover .icon path {
   fill: #e80368;
 }
-.facts .iconbox-yellow i {
+.aoi .iconbox-yellow i {
   color: #ffbb2c;
 }
-.facts .iconbox-yellow:hover .icon i {
+.aoi .iconbox-yellow:hover .icon i {
   color: #fff;
 }
-.facts .iconbox-yellow:hover .icon path {
+.aoi .iconbox-yellow:hover .icon path {
   fill: #ffbb2c;
 }
-.facts .iconbox-red i {
+.aoi .iconbox-red i {
   color: #ff5828;
 }
-.facts .iconbox-red:hover .icon i {
+.aoi .iconbox-red:hover .icon i {
   color: #fff;
 }
-.facts .iconbox-red:hover .icon path {
+.aoi .iconbox-red:hover .icon path {
   fill: #ff5828;
 }
-.facts .iconbox-teal i {
+.aoi .iconbox-teal i {
   color: #11dbcf;
 }
-.facts .iconbox-teal:hover .icon i {
+.aoi .iconbox-teal:hover .icon i {
   color: #fff;
 }
-.facts .iconbox-teal:hover .icon path {
+.aoi .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
 
@@ -462,6 +462,49 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume .resume-download .button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.resume .resume-download .button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.resume .resume-download .button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.resume .resume-download .button:hover {
+  color: #fff;
+}
+.resume .resume-download .button:hover:before {
+  width: 100%;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -554,13 +597,13 @@ section {
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.85);
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.5s;
   z-index: 2;
   opacity: 0;
 }
@@ -643,11 +686,11 @@ section {
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #ffffff;
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -724,22 +767,49 @@ section {
 .services .icon-box {
   margin-bottom: 20px;
 }
+
+.services .sub-heading {
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
 .services .icon {
   float: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
+  width: 34px;
+  height: 34px;
+  background: #ffffff;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #ffffff;
 }
+
 .services .icon i {
   color: #fff;
   font-size: 24px;
-  line-height: 0;
+}
+
+.services .titletwo {
+  margin-left: 50px;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-bottom:15px;
+  font-size: 18px;
+}
+
+.services .titletwo a {
+  color: #343a40;
+}
+
+.services .titletwo a:hover {
+  color: #149ddd;
+}
+
+.services .icon-box {
+  margin-bottom: 20px;
 }
 .services .icon-box:hover .icon {
   background: #fff;
